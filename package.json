@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/fapapa/battleship/issues"
   },
-  "homepage": "https://github.com/fapapa/battleship#readme"
+  "homepage": "https://github.com/fapapa/battleship#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
