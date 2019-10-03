@@ -20,5 +20,9 @@
   "dependencies": {
     "ejs": "^2.7.1",
     "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.1"
   }
 }
