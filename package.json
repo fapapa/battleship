@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/fapapa/battleship#readme",
   "dependencies": {
+    "cookie-session": "^1.3.3",
     "ejs": "^2.7.1",
     "express": "^4.17.1"
   },
