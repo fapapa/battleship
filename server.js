@@ -35,7 +35,18 @@ app.get('/game/new', (req, res) => {
 });
 
 app.get('/game/:id', (req, res) => {
-  res.send("This is where the game will go!");
+  Game.find(req.params.id, (game) => {
+    if (game.shipsArePlaced) {
+      return res.redirect(`/game/${game.id}/place_ships`);
+    }
+
+    const templateVars = {
+      playerBoard: game.myBoard,
+      oponentBoard: game.oponentBoard
+    };
+
+    res.render('game/board.ejs', templateVars);
+  });
 });
 
 app.listen(PORT, () => {
